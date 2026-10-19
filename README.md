@@ -16,6 +16,8 @@ Para este proyecto se utiliza el algoritmo MergeSort para ordenar la lista de bo
 ### Selecciona una estructura de datos adecuada al problema
 Se utiliza un vector de objetos del tipo Boxeador. 
 
+### Selecciona un árbol adecuado para resolver el problema
+
 ## SICT0301B: Evalúa los componentes
 ### Análisis de complejidad de algoritmos y componentes
 - MergeSort:
