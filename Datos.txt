@@ -1,0 +1,31 @@
+id, nombre, categoría, peso (kg), W, L, K 
+101,Canelo Alvarez,Supermediano,76.2,60,2,39
+102,Tyson Fury,Pesado,120.5,34,1,24
+103,Naoya Inoue,Supergallo,55.3,26,0,23
+104,Dmitry Bivol,Semipesado,79.3,22,0,11
+105,Oleksandr Usyk,Pesado,100,25,0,16
+106,Terence Crawford,Supermediano,76.2,42,0,31
+107,Gervonta Davis,Ligero,61.2,30,1,28
+108,Shakur Stevenson,Ligero,61.2,25,0,11
+109,David Benavidez,Semipesado,79.4,32,0,26
+110,Anthony Joshua,Pesado,110,30,4,27
+111,Daniel Dubois,Pesado,110,24,3,23
+112,Errol Spence Jr,Superwelter,69.9,28,1,22
+113,Artur Beterbiev,Semipesado,79.4,21,1,20
+114,George Kambosos Jr,Ligero,61.2,21,4,10
+115,Devin Haney,Superligero,63.5,33,0,15
+116,Teofimo Lopez,Superligero,63.5,22,1,13
+117,Isaac Cruz,Ligero,61.2,28,3,18
+118,Jesse Rodriguez,Supermosca,52.2,24,0,17
+119,Juan Francisco Estrada,Gallo,53.5,44,4,28
+120,Román González,Supermosca,52.2,52,4,42
+121,Shakur Stevenson,Superpluma,59,25,0,11
+122,Andy Ruiz Jr,Pesado,120,35,2,22
+123,Lennox Lewis,Pesado,111,41,2,32
+124,Mike Tyson,Pesado,100,50,6,44
+125,Floyd Mayweather Jr,Superwelter,69.9,50,0,27
+126,Manny Pacquiao,Superwelter,69.9,62,8,39
+127,Oscar De La Hoya,Superwelter,69.9,39,6,30
+128,Julio César Chávez,Superligero,63.5,107,6,85
+129,Miguel Cotto,Superwelter,69.9,41,6,33
+130,Marvin Hagler,Mediano,72.6,62,3,52
