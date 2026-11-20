@@ -80,24 +80,47 @@ bool add(List<Boxeador>& boxeadores, GestorDatos& gestor) {
     if (gestor.existeId(boxeadores, id)) {
         cout << "Ese ID ya está en uso" << endl;
     return false;
-}
+    }
  
     cout << "Nombre: ";
     getline(cin, nombre);
+    while (nombre == "") {
+        cout << "El nombre no puede ir vacio: ";
+        getline(cin, nombre);
+    }
     cout << "Categoria: ";
     getline(cin, categoria);
+    while (categoria == ""){
+        cout << "La categoria no puede ir vacia: ";
+        getline(cin, categoria);
+    }
     cout << "Peso (kg): ";
     cin >> peso;
+    while (peso <= 0) {
+        cout << "El peso debe ser mayor a 0, intenta de nuevo: ";
+        cin >> peso;
+    }
+
     cout << "Victorias: ";
     cin >> wins;
+    while (wins < 0) {
+        cout << "No puede ser negativo, intenta de nuevo: ";
+        cin >> wins;
+    }
+
     cout << "Derrotas: ";
     cin >> losses;
-    cout << "Victorias por KO (no mayor a victorias): ";
+    while (losses < 0) {
+        cout << "No puede ser negativo, intenta de nuevo: ";
+        cin >> losses;
+    }
+
+    cout << "Victorias por KO: ";
     cin >> kos;
-    while (kos > wins){
-        cout << "Las victorias por KO no pueden ser mayores al numero de victorias, ingresalo de nuevo: " << endl;
+    while (kos < 0 || kos > wins) {
+        cout << "Las victorias por KO no pueden ser mayores al numero de victorias ni un numero negativo: ";
         cin >> kos;
-    } 
+    }
     cin.ignore();
     
     boxeadores.add(Boxeador(id, nombre, categoria, peso, wins, losses, kos));
@@ -117,8 +140,12 @@ bool remove(List<Boxeador>& boxeadores) {
             string r;
             cout << "Eliminar a " << b.getNombre() << "? (s/n): ";
             getline(cin, r);
+            while (r != "s" && r != "n") {
+                cout << "Escribe 's' o 'n': ";
+                getline(cin, r);
+            }
             if (r == "s") {
-                boxeadores.remove(i); 
+                boxeadores.remove(i);
                 return true;
             }
             cout << "Cancelado" << endl;
@@ -136,11 +163,16 @@ int main() {
         return 1;
     }
 
-    int opcion;
-    while (opcion !=0) {
+    int opcion = -1;
+    while (opcion != 0) {
         menu();
         cout << "Elige una opcion: ";
         cin >> opcion;
+
+        while (opcion < 0 || opcion > 6) {
+            cout << "Opcion no valida, elige entre 0 y 6: ";
+            cin >> opcion;
+        }
         cin.ignore();
  
         switch (opcion) {
