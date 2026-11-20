@@ -14,8 +14,7 @@ Una comisión de boxeo necesita clasificar, filtrar y analizar a los boxeadores 
 Para este proyecto se utiliza el algoritmo MergeSort para ordenar la lista de boxeadores según su efectividad de KO. Se eligió este algoritmo debido a su complejidad de O(n log n) en el mejor, promedio y peor caso para que se puedan procesar grandes volúmenes de datos en menor tiempo.
 
 ### Selecciona una estructura de datos adecuada al problema
-Se utiliza una Linked List para tener los datos de todos los boxeadores.
-
+Se utiliza una linked list porque el registro de boxeadores crece y se reduce mientras corre el programa. Así, no se define un tamaño fijo del registro; pero gracias a esto, cuando el usuario quiera acceder a un dato por posicion será de complejidad O(n).
 
 ## SICT0301B: Evalúa los componentes
 ### Análisis de complejidad de algoritmos y componentes
@@ -39,12 +38,13 @@ Se utiliza una Linked List para tener los datos de todos los boxeadores.
 - add (menú): O(n²), ya que existeId es O(n²) y después add es O(n).
 - remove (menú): O(n²), ya que la búsqueda con get es O(n²) y después remove es O(n).
 
-Complejidad final del programa: O(n²) por operación del menú. Domina el acceso por índice get dentro de ciclos, que es O(n) en la linked list. El MergeSort, aunque es O(n log n), no es el cuello de botella.
+Complejidad final del programa: O(n²) por las operaciones del menú.
 
 ## SICT0303B: Implementa acciones científicas 
 ### Consultas, Lectura y Escritura
-- Lectura de archivos.
-- Escritura de archivos.
+- Consulta: Las opciones 1, 2 y 3 del menú (ordenar boxeadores por % de KO, buscar por ID, y filtrar por categoría)
+- Lectura de archivos: leerBoxeadores carga los datos de Datos.txt a la linked list.
+- Escritura de archivos: Las opciones 4, 5 y 6 del menú (agregar boxeador, eliminar boxeador, y guardar cambios). Cabe destacar que si el usuario no guarda los cambios antes de cerrar el programa, en Datos.txt no se reescribirá ningún dato ni se guardará ninguún cambio. 
 
 ## SEG0701: Cultura digital
 El programa optimiza la toma de decisiones dentro de una comisión de boxeo al automatizar el proceso de selección de rivales y nos permite prevenir combates desproporcionados y ahorrar tiempo operativo.
